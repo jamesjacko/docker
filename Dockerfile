@@ -8,6 +8,7 @@ RUN apt-get update &&  apt-get install -y npm \
 					  ruby-sass
 RUN npm install -g grunt-cli
 RUN npm install -g karma-cli
+RUN  gem install scss-lint
 USER jenkins
  # drop back to the regular jenkins user - good practice
 COPY plugins.txt /usr/share/jenkins/plugins.txt
