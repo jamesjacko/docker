@@ -7,7 +7,7 @@ RUN apt-get update &&  apt-get install -y npm \
 					  nodejs-legacy \
 					  ruby-sass
 RUN npm install -g grunt-cli@0.1.13
-RUN npm install -g karma-cli@0.12.31
+RUN npm install -g karma-cli@0.12.32
 RUN npm install -g phantomjs@1.9.17
 RUN  gem install scss-lint -v 0.38.0
 USER jenkins
