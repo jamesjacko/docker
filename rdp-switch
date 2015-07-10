@@ -1,0 +1,12 @@
+service rdp-switch
+{
+ disable = no
+ type = UNLISTED
+ socket_type = stream
+ protocol = tcp
+ wait = no
+# redirect = 192.168.254.2 22
+ redirect = 10.58.34.121 3389
+ port = 3389
+ user = nobody
+}
