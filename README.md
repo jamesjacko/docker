@@ -1,4 +1,12 @@
 # docker
 
-docker run -it --rm -v "$PWD":/config-dir logstash logstash -f /config-dir/logstash.conf
+## to build the project :-
+
+docker build -t chai ./
+
+## To run the project
+
+docker run -p 8080:8080 chai
+
+
 
