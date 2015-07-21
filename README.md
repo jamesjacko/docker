@@ -1,3 +1,3 @@
 # docker
 
-docker run -it --rm -v "$PWD":/config-dir logstash logstash -f /config-dir/logstash.conf
+docker run -it --rm -v "$PWD":/configuration logstash logstash -f /configuration/logstash.conf
