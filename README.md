@@ -1,3 +1,3 @@
 # docker
 
-docker run -it --rm -v "$PWD":/conf logstash logstash -f /configuration/logstash.conf
+ docker run --name chai-logstash -it --rm -v "$PWD":/configuration  chai-logstash logstash -f /configuration/logstash.conf 
