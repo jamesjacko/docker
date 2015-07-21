@@ -1,5 +1,5 @@
-From logstash
+From pblittle/docker-logstash
 
 EXPOSE 12201/UDP
-EXPOSE 3333
 EXPOSE 9200
+EXPOSE 9292
