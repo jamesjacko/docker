@@ -1,0 +1,24 @@
+logging:
+  appenders:
+    - type: console
+    - type: gelf
+      host: localhost
+      # facility: MyApplication
+      # threshold: ALL
+      # host: localhost
+      # port: 12201
+      # useLoggerName: true
+      # useThreadName: true
+      # useMarker: false
+      # serverVersion: 0.9.6
+      # chunkThreshold: 1000
+      # messagePattern: %m%rEx
+      # shortMessagePattern: %.-100(%m%rEx)
+      # hostName: hostname
+      includeFullMDC: true
+      additionalFields:
+        userName: _userName
+      staticFields:
+        _node_name: www013
+      fieldTypes:
+        _request_id: long
