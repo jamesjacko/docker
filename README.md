@@ -2,11 +2,10 @@
 
 ## to build the project :-
 
-docker build -t chai ./
+docker build -t chai-backend ./
 
 ## To run the project
 
-docker run -p 8080:8080 chai
-
+docker run   -it -p 8081:8080  --link chai-postgres:pg --link ecstatic_hawking:logstash chai-backend
 
 
