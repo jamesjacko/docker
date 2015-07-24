@@ -7,4 +7,4 @@ github-oauth:0.20
 nodejs:0.2.1
 slack:1.7
 jira:1.39
-
+shiningpanda:0.21
