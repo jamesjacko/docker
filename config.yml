@@ -3,8 +3,8 @@ logging:
     - type: console
     - type: gelf
       host: localhost
-      # facility: MyApplication
-      # threshold: ALL
+      facility: chai
+      threshold: ALL
       # host: localhost
       # port: 12201
       # useLoggerName: true
@@ -14,7 +14,7 @@ logging:
       # chunkThreshold: 1000
       # messagePattern: %m%rEx
       # shortMessagePattern: %.-100(%m%rEx)
-      # hostName: hostname
+      hostName: chai-backend
       includeFullMDC: true
       additionalFields:
         userName: _userName
